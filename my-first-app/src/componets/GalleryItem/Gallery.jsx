@@ -13,7 +13,7 @@ export const GalleryItem=({
   <h2>{title}</h2>
   <p>Автор: <a href={author}>{tag}</a></p>
   <p>Ціна: {price} грн</p>
-  <p>Доступність: {quantity} закінчується чи є в наявності</p>
+  <p>Доступність: {quantity} {quantity > 5 ? 'є  в наявності': 'закінчується' } закінчується чи є в наявності</p>
   <button type="button">Додати в кошик</button>
         
         
